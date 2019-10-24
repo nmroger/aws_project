@@ -15,7 +15,7 @@
 
 - name: firewalld permits http service
   firewalld:
-    service: "{{ item }"
+    service: "{{ item }}"
     permanent: true
     state: enabled
     immediate: true
