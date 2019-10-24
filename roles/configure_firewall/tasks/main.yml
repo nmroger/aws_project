@@ -11,7 +11,7 @@
     name: "{{ item }}"
     enabled: true
     state: started
-  with_itmes: "{{ services_to_enable }}"
+  with_items: "{{ services_to_enable }}"
 
 - name: firewalld permits http service
   firewalld:
